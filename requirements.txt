@@ -1,0 +1,6 @@
+aiogram>=3.13,<4
+aiosqlite>=0.20,<1
+APScheduler>=3.10,<4
+python-dotenv>=1,<2
+gspread>=6,<7
+google-auth>=2,<3

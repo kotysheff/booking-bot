@@ -1,0 +1,22 @@
+[Unit]
+Description=Booking Bot Telegram service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=booking-bot
+Group=booking-bot
+WorkingDirectory=/opt/booking-bot
+ExecStart=/opt/booking-bot/.venv/bin/python -m bot.main
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/booking-bot/data /opt/booking-bot/logs
+
+[Install]
+WantedBy=multi-user.target
