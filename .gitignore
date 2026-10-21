@@ -1,0 +1,26 @@
+# Секреты
+.env
+credentials.json
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Данные и логи
+data/
+*.db
+*.sqlite3
+*.log
+logs/
+
+# Система и редакторы
+.DS_Store
+.idea/
+.vscode/
+
+# Остальное
+CLAUDE.md
+AGENTS.md
